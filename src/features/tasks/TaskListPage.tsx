@@ -139,37 +139,37 @@ export const TaskListPage: React.FC = () => {
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
         >
-          <option value="all">All Statuses</option>
-          <option value="pending">Pending</option>
-          <option value="in_progress">In Progress</option>
-          <option value="review">In Review</option>
-          <option value="completed">Completed</option>
+          <option value="all" className="bg-[#0f172a] text-white">All Statuses</option>
+          <option value="pending" className="bg-[#0f172a] text-white">Pending</option>
+          <option value="in_progress" className="bg-[#0f172a] text-white">In Progress</option>
+          <option value="review" className="bg-[#0f172a] text-white">In Review</option>
+          <option value="completed" className="bg-[#0f172a] text-white">Completed</option>
         </select>
 
         {/* Priority Filter */}
         <select
           value={priorityFilter}
           onChange={(e) => setPriorityFilter(e.target.value)}
-          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
         >
-          <option value="all">All Priorities</option>
-          <option value="low">Low Priority</option>
-          <option value="medium">Medium Priority</option>
-          <option value="high">High Priority</option>
-          <option value="critical">Critical Priority</option>
+          <option value="all" className="bg-[#0f172a] text-white">All Priorities</option>
+          <option value="low" className="bg-[#0f172a] text-white">Low Priority</option>
+          <option value="medium" className="bg-[#0f172a] text-white">Medium Priority</option>
+          <option value="high" className="bg-[#0f172a] text-white">High Priority</option>
+          <option value="critical" className="bg-[#0f172a] text-white">Critical Priority</option>
         </select>
 
         {/* Department Filter */}
         <select
           value={departmentFilter}
           onChange={(e) => setDepartmentFilter(e.target.value)}
-          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+          className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
         >
-          <option value="all">All Departments</option>
+          <option value="all" className="bg-[#0f172a] text-white">All Departments</option>
           {departments.map((d) => (
-            <option key={d.departmentId} value={d.name}>
+            <option key={d.departmentId} value={d.name} className="bg-[#0f172a] text-white">
               {d.name}
             </option>
           ))}

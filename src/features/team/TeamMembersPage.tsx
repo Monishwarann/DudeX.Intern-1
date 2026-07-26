@@ -129,11 +129,11 @@ export const TeamMembersPage: React.FC = () => {
             <select
               value={editRole}
               onChange={(e) => setEditRole(e.target.value as UserRole)}
-              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
             >
-              <option value="employee">Employee (View assigned, update progress, comment)</option>
-              <option value="manager">Manager (Manage team, view department tasks & reports)</option>
-              <option value="admin">Admin (Full administrative control across organization)</option>
+              <option value="employee" className="bg-[#0f172a] text-white">Employee (View assigned, update progress, comment)</option>
+              <option value="manager" className="bg-[#0f172a] text-white">Manager (Manage team, view department tasks & reports)</option>
+              <option value="admin" className="bg-[#0f172a] text-white">Admin (Full administrative control across organization)</option>
             </select>
           </div>
 
@@ -144,10 +144,10 @@ export const TeamMembersPage: React.FC = () => {
             <select
               value={editDept}
               onChange={(e) => setEditDept(e.target.value)}
-              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
             >
               {departments.map((d) => (
-                <option key={d.departmentId} value={d.name}>
+                <option key={d.departmentId} value={d.name} className="bg-[#0f172a] text-white">
                   {d.name}
                 </option>
               ))}

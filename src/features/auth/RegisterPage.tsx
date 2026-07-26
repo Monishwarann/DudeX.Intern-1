@@ -120,11 +120,11 @@ export const RegisterPage: React.FC = () => {
                 <select
                   value={role}
                   onChange={(e) => setRole(e.target.value as UserRole)}
-                  className="w-full px-3 py-2 rounded-2xl glass-input text-xs bg-[#121826] font-medium"
+                  className="w-full px-3 py-2 rounded-2xl glass-input text-xs bg-[#0f172a] text-white font-medium focus:outline-none"
                 >
-                  <option value="employee">Employee</option>
-                  <option value="manager">Manager</option>
-                  <option value="admin">Admin</option>
+                  <option value="employee" className="bg-[#0f172a] text-white">Employee</option>
+                  <option value="manager" className="bg-[#0f172a] text-white">Manager</option>
+                  <option value="admin" className="bg-[#0f172a] text-white">Admin</option>
                 </select>
               </div>
 
@@ -135,13 +135,13 @@ export const RegisterPage: React.FC = () => {
                 <select
                   value={department}
                   onChange={(e) => setDepartment(e.target.value)}
-                  className="w-full px-3 py-2 rounded-2xl glass-input text-xs bg-[#121826] font-medium"
+                  className="w-full px-3 py-2 rounded-2xl glass-input text-xs bg-[#0f172a] text-white font-medium focus:outline-none"
                 >
-                  <option value="Engineering">Engineering</option>
-                  <option value="UI/UX Design">UI/UX Design</option>
-                  <option value="Product Management">Product Management</option>
-                  <option value="Growth & Marketing">Growth & Marketing</option>
-                  <option value="Enterprise Sales">Enterprise Sales</option>
+                  <option value="Engineering" className="bg-[#0f172a] text-white">Engineering</option>
+                  <option value="UI/UX Design" className="bg-[#0f172a] text-white">UI/UX Design</option>
+                  <option value="Product Management" className="bg-[#0f172a] text-white">Product Management</option>
+                  <option value="Growth & Marketing" className="bg-[#0f172a] text-white">Growth & Marketing</option>
+                  <option value="Enterprise Sales" className="bg-[#0f172a] text-white">Enterprise Sales</option>
                 </select>
               </div>
             </div>

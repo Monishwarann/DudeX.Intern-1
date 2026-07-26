@@ -136,12 +136,12 @@ export const CreateTaskModal: React.FC<CreateTaskModalProps> = ({ isOpen, onClos
             <select
               value={priority}
               onChange={(e) => setPriority(e.target.value as TaskPriority)}
-              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
             >
-              <option value="low">Low</option>
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
-              <option value="critical font-bold text-rose-400">Critical</option>
+              <option value="low" className="bg-[#0f172a] text-white">Low</option>
+              <option value="medium" className="bg-[#0f172a] text-white">Medium</option>
+              <option value="high" className="bg-[#0f172a] text-white">High</option>
+              <option value="critical" className="bg-[#0f172a] text-rose-400 font-bold">Critical</option>
             </select>
           </div>
 
@@ -152,12 +152,12 @@ export const CreateTaskModal: React.FC<CreateTaskModalProps> = ({ isOpen, onClos
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value as TaskStatus)}
-              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
             >
-              <option value="pending">Pending</option>
-              <option value="in_progress">In Progress</option>
-              <option value="review">In Review</option>
-              <option value="completed">Completed</option>
+              <option value="pending" className="bg-[#0f172a] text-white">Pending</option>
+              <option value="in_progress" className="bg-[#0f172a] text-white">In Progress</option>
+              <option value="review" className="bg-[#0f172a] text-white">In Review</option>
+              <option value="completed" className="bg-[#0f172a] text-white">Completed</option>
             </select>
           </div>
 
@@ -168,18 +168,18 @@ export const CreateTaskModal: React.FC<CreateTaskModalProps> = ({ isOpen, onClos
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#121826]"
+              className="w-full px-3 py-2 rounded-2xl glass-input text-xs font-medium bg-[#0f172a] text-white"
             >
               {departments.map((d) => (
-                <option key={d.departmentId} value={d.name}>
+                <option key={d.departmentId} value={d.name} className="bg-[#0f172a] text-white">
                   {d.name}
                 </option>
               ))}
               {departments.length === 0 && (
                 <>
-                  <option value="Engineering">Engineering</option>
-                  <option value="UI/UX Design">UI/UX Design</option>
-                  <option value="Product Management">Product Management</option>
+                  <option value="Engineering" className="bg-[#0f172a] text-white">Engineering</option>
+                  <option value="UI/UX Design" className="bg-[#0f172a] text-white">UI/UX Design</option>
+                  <option value="Product Management" className="bg-[#0f172a] text-white">Product Management</option>
                 </>
               )}
             </select>

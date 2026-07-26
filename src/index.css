@@ -33,6 +33,17 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Dropdown Option Color Fixes */
+select option {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+.light select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
 /* Glassmorphism Components & Utilities */
 .glass-panel {
   background: rgba(18, 24, 38, 0.7);
